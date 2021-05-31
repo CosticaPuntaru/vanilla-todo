@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<tk-todo-app></tk-todo-app>
+<template id="tk-todo-item-template">
+    <li class="tk-todo-item">
+        <div class="view">
+            <input class="toggle" type="checkbox">
+            <label class="itemName">Taste JavaScript</label>
+            <button class="destroy"></button>
+        </div>
+    </li>
+</template>
+<template id="tk-todo-app-template">
+    <section class="todoapp">
+        <header class="header">
+            <h1>TK Todos</h1>
+            <form class="tk-add-todo-form ">
+                <input
+                        class="new-todo"
+                        name="text"
+                        placeholder="add todo item"
+                        type="text"
+                        required
+                        minlength="3"
+                        autofocus
+                />
+            </form>
+        </header>
+        <section class="main">
+            <ul class="todo-list-items todo-list">
+            </ul>
+        </section>
+    </section>
+    <link href="./index.css" rel="stylesheet" />
+</template>
+<script src="./index.js" async></script>
+</body>
+</html>
